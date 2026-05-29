@@ -32,7 +32,7 @@ def zpracovani_radku(url, cislo, obec, odkaz, tries=3):
         t.sleep(5)
         return zpracovani_radku(cislo, obec, odkaz, tries - 1)
 
-    #
+    
     tabulka = soup2.table
     bunky = tabulka.find_all("td")
 
@@ -65,20 +65,20 @@ def main():
     nazev = argv[2]
 
 
-    #   stahnout stranku do promenne    #
+    #    stahnout stranku do promenne    #
     try:
         soup = BeautifulSoup(requests.get(url).content, "html.parser")
     except requests.exceptions.ConnectionError as error:
         return
 
 
-    #   najdeme vsechny tabulky #
+    #    najdeme vsechny tabulky    #
     tb = soup.find_all("table")
 
 
 
-    #   nejdrive zjisti jestli ma vsechny argumenty, jinak skonci
-    #
+    #    nejdrive zjisti jestli ma vsechny argumenty, jinak skonci    #
+    
 
 
 
@@ -110,7 +110,7 @@ def main():
 
 
 
-    #   zapisovani do souboru
+    #    zapisovani do souboru    #
 
 
     with open(nazev, "w", newline="", encoding="utf-8") as csvfile:
