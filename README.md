@@ -18,7 +18,7 @@ Spouštíme pomocí dvou argumentů:
 **Příklad:**
 
 ```bash
-python volby.py "https://www.volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=12&xnumnuts=7103" vysledky_olomouc.csv
+python volby17_MV.py "https://www.volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=12&xnumnuts=7103" vysledky_olomouc.csv
 ```
 
 ## Výstup
