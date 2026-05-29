@@ -8,7 +8,7 @@ Skript prochází stránku s výsledky voleb pro daný kraj/okres, stáhne data 
 
 
 
-**Argumenty:**
+**Jak program použít?**
 
 | Argument | Popis |
 |---|---|
