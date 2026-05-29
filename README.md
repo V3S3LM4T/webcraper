@@ -1,6 +1,6 @@
-# Volby.cz Election Results Scraper
+# Volební scraper
 
-Python skript pro stahování výsledků voleb z webu [volby.cz](https://www.volby.cz) a jejich uložení do CSV souboru.
+Python skript pro stahování výsledků voleb z webu [volby.cz](https://www.volby.cz/pls/ps2017nss/ps3?xjazyk=CZ) a jejich uložení do CSV souboru.
 
 ## Popis
 
