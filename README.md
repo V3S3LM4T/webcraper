@@ -42,7 +42,7 @@ CSV soubor oddělený středníkem (`;`) s následujícími sloupci:
 | `registered` | Počet registrovaných voličů |
 | `envelopes` | Počet vydaných obálek |
 | `valid` | Počet platných hlasů |
-| *(název strany)* | Počet hlasů pro každou stranu |
+| `strana` | Počet hlasů pro každou stranu |
 
 ## Poznámky
 
