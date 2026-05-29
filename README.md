@@ -6,17 +6,7 @@ Python skript pro stahování výsledků voleb z webu [voleb](https://www.volby.
 
 Skript prochází stránku s výsledky voleb pro daný kraj/okres, stáhne data za každou obec (počty voličů, vydané a platné obálky, výsledky stran) a zapíše je do CSV souboru.
 
-Instalace závislostí:
 
-```bash
-pip install requests beautifulsoup4
-```
-
-## Použití
-
-```bash
-python volby.py <URL> <název_souboru.csv>
-```
 
 **Argumenty:**
 
