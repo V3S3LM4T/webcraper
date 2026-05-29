@@ -38,4 +38,5 @@ CSV soubor oddělený středníkem (`;`) s následujícími sloupci:
 
 - Skript automaticky opakuje pokus o stažení (až 3×) při výpadku spojení.
 - Mezi opakovanými pokusy čeká 5 sekund.
+- Odkaz vkládat mezi uvozovky
 - Výstupní soubor je kódován v UTF-8.
