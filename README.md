@@ -9,7 +9,7 @@ Skript prochází stránku s výsledky voleb pro daný kraj/okres, stáhne data 
 
 
 **Jak program použít?**
-
+Spouštíme pomocí dvou argumentů:
 | Argument | Popis |
 |---|---|
 | `<URL>` | Odkaz na stránku s výsledky voleb pro daný okres/kraj |
