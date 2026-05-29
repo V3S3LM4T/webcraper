@@ -6,13 +6,6 @@ Python skript pro stahování výsledků voleb z webu [volby.cz](https://www.vol
 
 Skript prochází stránku s výsledky voleb pro daný kraj/okres, stáhne data za každou obec (počty voličů, vydané a platné obálky, výsledky stran) a zapíše je do CSV souboru.
 
-## Požadavky
-
-- Python 3.x
-- Knihovny:
-  - `requests`
-  - `beautifulsoup4`
-
 Instalace závislostí:
 
 ```bash
