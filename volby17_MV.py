@@ -22,17 +22,21 @@ def zpracovani_radku(url, cislo, obec, odkaz, tries=3):
 
     print(f"zpracovávám {obec.get_text()} ({cislo.get_text()})")
 
+
+
     absolute_url = urljoin(url, odkaz.a.get('href'))
 
     try:
-        soup2 = BeautifulSoup(requests.get(absolute_url).content, "html.parser")
+        soup2 = BeautifulSoup(requests.get(
+            absolute_url).content, "html.parser")
         # print(soup2)
-    except requests.exceptions.ConnectionError as error:
-        print(f"[ERROR] Obec {cislo} nevypsana (ConnectionError). Zbyva {tries - 1} pokusů.")
+    except requests.exceptions.ConnectionError as _:
+        print(f"[ERROR] Obec {cislo} nevypsana (ConnectionError). Zbyva {
+              tries - 1} pokusů.")
         t.sleep(5)
-        return zpracovani_radku(cislo, obec, odkaz, tries - 1)
+        return zpracovani_radku(url, cislo, obec, odkaz, tries - 1)
 
-    
+    #
     tabulka = soup2.table
     bunky = tabulka.find_all("td")
 
@@ -65,20 +69,20 @@ def main():
     nazev = argv[2]
 
 
-    #    stahnout stranku do promenne    #
+    #   stahnout stranku do promenne    #
     try:
         soup = BeautifulSoup(requests.get(url).content, "html.parser")
     except requests.exceptions.ConnectionError as error:
         return
 
 
-    #    najdeme vsechny tabulky    #
+    #   najdeme vsechny tabulky #
     tb = soup.find_all("table")
 
 
 
-    #    nejdrive zjisti jestli ma vsechny argumenty, jinak skonci    #
-    
+    #   nejdrive zjisti jestli ma vsechny argumenty, jinak skonci
+    #
 
 
 
@@ -110,7 +114,7 @@ def main():
 
 
 
-    #    zapisovani do souboru    #
+    #   zapisovani do souboru
 
 
     with open(nazev, "w", newline="", encoding="utf-8") as csvfile:
